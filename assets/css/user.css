@@ -1,0 +1,857 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+blink,
+.blink {
+    animation: blinker 2s linear infinite;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.nav-tab {
+    float: right;
+    margin-right: 15px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px
+}
+
+.nav-tab:focus {
+    outline: 0;
+}
+
+.nav-tab .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px
+}
+
+.nav-tab .icon-bar+.icon-bar {
+    margin-top: 4px
+}
+
+
+/* Base styles for buttons */
+/* Base styles for buttons */
+.button {
+    width: 80%;
+    height: 90px;
+    border: none;
+   
+    margin: auto;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Styles for verify button */
+
+
+/* Styles for verify button */
+.verify_button {
+    background: linear-gradient(to bottom, #007bff, #0056b3);
+    border-radius: 5px;
+    width: 40%;
+    height: 40px;
+    border: none;
+    color: #fff;
+    margin: auto;
+    padding: 10px 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+    outline: none; 
+}
+
+.verify_button:hover {
+    transform: translateY(-3px); /* Shift button upward on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Styles for delete button */
+.delete_button {
+    background: linear-gradient(to bottom, #dc3545, #bd2130);
+    border-radius: 5px;
+    width: 40%;
+    height: 40px;
+    border: none;
+    color: #fff;
+    margin: auto;
+    padding: 10px 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+    outline: none; 
+}
+
+.delete_button:hover {
+    transform: translateY(-3px); /* Shift button upward on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+    /* Add shadow on hover */
+}
+
+
+@media (min-width:768px) {
+    /* Hide the navigation tabs */
+.nav-tab {
+    display: none;
+}
+
+/* Custom navbar styles */
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #fff; 
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Navbar brand styles */
+.navbar-custom .navbar-brand {
+    font-size: 24px; /* Increase font size */
+    text-transform: none;
+    letter-spacing: 1px;
+    color: #333; /* Change font color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Navbar brand hover effect */
+.navbar-custom .navbar-brand {
+    font-size: 24px; /* Initial font size */
+    color: #333; /* Initial font color */
+    transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease; /* Smooth transition for color, font size, and font weight changes */
+}
+
+/* Hover effect for navbar brand */
+.navbar-custom .navbar-brand:hover {
+    color: rgb(255, 255, 255); /* Change font color on hover */
+    font-size: 28px; /* Increase font size on hover */
+    font-weight: bold; /* Increase font weight on hover */
+}
+
+/* Hover effect for navbar links */
+.navbar-custom .nav li a {
+    transition: color 0.3s ease; /* Smooth transition for link color change */
+}
+
+.navbar-custom .nav li a:hover {
+    color: #1ba39c; /* Change link color on hover */
+}
+
+/* Hover effect for active navbar links */
+.navbar-custom .nav li.active a {
+    color: #1ba39c; 
+    
+    /* Change font color for active link */
+}
+
+/* Underline effect on hover for navbar links */
+.navbar-custom .nav li a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Move underline below text */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #1ba39c; /* Color of the underline */
+    transform: scaleX(0); /* Initial state: hide the underline */
+    transition: transform 0.3s ease; /* Smooth transition for underline appearance */
+}
+
+.navbar-custom .nav li a:hover::before {
+    transform: scaleX(1); /* Show the underline on hover */
+}
+
+
+/* Navbar toggle button styles */
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 8px 12px; /* Increase padding */
+    font-size: 20px; /* Decrease font size */
+    color: #333; /* Change color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Navbar toggle button hover effect */
+.navbar-custom .navbar-brand .navbar-toggle:hover {
+    color: #1ba39c; /* Change color on hover */
+}
+
+/* Navigation links styles */
+.navbar-custom .nav li a {
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    position: relative; /* Position for pseudo elements */
+}
+
+/* Navigation links hover effect */
+.navbar-custom .nav li a:hover {
+    color: #1ba39c;
+    border-radius: 5px; /* Change font color on hover */
+}
+
+/* Active navigation link styles */
+.navbar-custom .nav li.active a {
+    color: #1ba39c; /* Change font color for active link */
+}
+
+/* Hover underline effect */
+.navbar-custom .nav li a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Move underline below text */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #1ba39c;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover::before {
+    transform: scaleX(1);
+}
+
+/* Gradient animation for navbar background */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.navbar-custom {
+    background: linear-gradient(45deg, #007bff, #1ba39c);
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s infinite;
+}
+
+
+
+@media(min-width:768px) {
+    /* Navbar customization */
+   .navbar-custom {
+    padding: 20px 0;
+    border: none; /* Remove border */
+    font-size: 13px;
+    background: linear-gradient(135deg, #1ba39c, #cedb6c); /* Gradient background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Styles for collapsed navbar */
+.navbar-custom.top-nav-collapse {
+    padding: 0;
+    border: none; /* Remove border */
+    color: #333;
+    background: linear-gradient(135deg, #1ba39c, #cedb6c); /* Gradient background */ 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Styles for navbar brand */
+.navbar-custom .navbar-brand {
+    font-size: 24px;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+}
+
+/* Styles for links within navbar */
+.navbar-custom .nav li a {
+    color: #000000;
+    display: inline-block;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(181, 181, 181, 0.5); /* Add a subtle text shadow */
+}
+
+/* Hover effect for links within navbar */
+.navbar-custom .nav li a:hover {
+    color: #1ba39c;
+    text-decoration: none; /* Remove underline on hover */
+}
+
+}
+
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0 100px 0;
+    text-align: center;
+    color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 10%;
+}
+
+.intro .intro-body .brand-heading {
+    font-size: 40px;
+}
+
+.intro .intro-body .intro-text {
+    font-size: 18px;
+}
+
+@media(min-width:768px) {
+    /* Introduction Section */
+/* Intro section */
+.intro {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('your-background-image.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.intro-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Gradient overlay */
+}
+
+.intro-content {
+    position: relative;
+    z-index: 1; /* Ensure content is above overlay */
+    padding-top: 100px;
+}
+
+.brand-heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Choose a professional font */
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    color: #fff;
+    animation: slideInDown 1s ease;
+}
+
+.intro-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Choose a professional font */
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #fff;
+    animation: slideInUp 1s ease;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.btn-circle {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 100%; /* Make it a circle */
+    font-size: 20px;
+    color: #fff;
+    background: transparent;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background on hover */
+}
+
+/* Keyframe animations */
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Additional styles for responsiveness and readability */
+@media (max-width: 768px) {
+    .brand-heading {
+        font-size: 40px;
+    }
+    .intro-text {
+        font-size: 16px;
+    }
+}
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* Common styles for background images */
+.bgimg-1,
+.bgimg-2 {
+    position: relative;
+    opacity: 0.8; /* Adjust opacity as needed */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+/* Specific styles for bgimg-1 */
+.bgimg-1 {
+    background-image: url("../../assets/img/lets.jpg");
+    min-height: 100vh; /* Ensure the background covers the viewport vertically */
+}
+
+/* Specific styles for bgimg-2 */
+.bgimg-2 {
+    background-image: url("../../assets/img/bg3.jpg");
+    min-height: 400px; /* Set a minimum height to ensure content is visible */
+}
+
+/* Hover effect */
+.bgimg-1:hover,
+.bgimg-2:hover {
+    opacity: 1; /* Increase opacity on hover for a subtle effect */
+}
+
+
+/* Styles for the caption container */
+.caption {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+/* Styles for the text within the caption */
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for transform and box-shadow */
+}
+
+/* Hover effect for the text within the caption */
+.caption span.border:hover {
+    transform: translateY(-5px); /* Move the text slightly upward on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase the shadow for a lifted effect */
+}
+
+/* Styles for the caption heading */
+.caption h2 {
+    margin-bottom: 20px; /* Add space below the heading */
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Styles for the caption paragraph */
+.caption p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Styles for h3 elements */
+h3 {
+    letter-spacing: 1px; /* Reduce letter spacing for a more subtle effect */
+    text-transform: uppercase;
+    font-size: 30px; /* Increase font size for better visibility */
+    font-weight: bold; /* Make the text bold for emphasis */
+    font-family: "Lato", sans-serif; /* Specify the font family */
+    color: #333; /* Use a darker color for better contrast */
+    margin-bottom: 15px; /* Add space below the heading */
+    text-align: center; /* Center-align the text */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+}
+
+/* Hover effect for h3 elements */
+h3:hover {
+    color: #1ba39c; /* Change text color on hover for emphasis */
+    cursor: pointer; /* Change cursor to pointer on hover for interactivity */
+}
+
+/* Styles for breadcrumb navigation */
+.breadcrumb {
+    text-align: center; /* Center-align the breadcrumb items */
+    background-color: transparent; /* Set a transparent background */
+    border-bottom: 1px solid #eee; /* Add a bottom border for separation */
+    padding-top: 12px; /* Add padding at the top */
+    padding-bottom: 12px; /* Add padding at the bottom */
+    margin-bottom: 40px; /* Add margin at the bottom for spacing */
+}
+
+/* Styles for individual breadcrumb items */
+.breadcrumb-item {
+    display: inline-block; /* Display the items horizontally */
+    margin-right: 10px; /* Add spacing between items */
+    font-size: 16px; /* Set the font size */
+    color: #333; /* Set the text color */
+    transition: color 0.3s ease; /* Add smooth transition for color change */
+}
+
+/* Styles for the last breadcrumb item */
+.breadcrumb-item:last-child {
+    font-weight: bold; /* Make the last item bold for emphasis */
+    color: #1ba39c; /* Set a different color for the last item */
+}
+
+/* Hover effect for breadcrumb items */
+.breadcrumb-item:hover {
+    color: #1ba39c; /* Change text color on hover for emphasis */
+    cursor: pointer; /* Change cursor to pointer on hover for interactivity */
+}
+
+/* Styles for reviewer name */
+.reviewer-name {
+    margin-right: 10px; /* Add margin to the right of the reviewer name */
+    font-style: italic; /* Make the reviewer name italic */
+    color: #888; /* Set a lighter color for the reviewer name */
+}
+
+/* Styles for site footer */
+.site-footer {
+    padding: 40px 0; /* Increase padding for better spacing */
+    text-align: center; /* Center-align the content */
+    background-color: #f9f9f9; /* Set a slightly lighter background color */
+    color: #555; /* Set text color */
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .site-footer h5 {
+        text-align: left; /* Align footer headings to the left on larger screens */
+    }
+}
+
+/* Styles for footer headings */
+.site-footer h5 {
+    font-size: 20px; /* Increase font size for headings */
+    font-weight: bold; /* Add bold font weight */
+    margin-bottom: 20px; /* Add more margin bottom */
+}
+
+/* Styles for social icons */
+.site-footer .social-icons {
+    margin-top: 30px; /* Increase margin top for spacing */
+}
+
+.site-footer .social-icons a {
+    display: inline-block; /* Display icons inline */
+    width: 50px; /* Increase width of icons */
+    height: 50px; /* Increase height of icons */
+    line-height: 50px; /* Set line height */
+    font-size: 24px; /* Increase font size */
+    color: #fff; /* Set icon color */
+    text-align: center; /* Center-align the icon */
+    background-color: #798FA5; /* Set background color */
+    border-radius: 50%; /* Make it a circle */
+    margin: 15px; /* Increase margin */
+    border: none; /* Remove border */
+    transition: background-color 0.3s ease; /* Add transition for background color */
+}
+
+/* Hover effect for social icons */
+.site-footer .social-icons a:hover {
+    background-color: #1ba39c; /* Change background color on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+}
+/* Additional styles for site footer */
+.site-footer {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+}
+
+/* Styles for the footer links */
+.site-footer a {
+    color: #1ba39c; /* Set link color */
+    text-decoration: none; /* Remove underlines from links */
+    transition: color 0.3s ease; /* Add smooth transition for link color change */
+}
+
+.site-footer a:hover {
+    color: #007bff; /* Change link color on hover */
+}
+
+/* Styles for the copyright text */
+.site-footer .copyright {
+    font-size: 14px; /* Set font size for copyright text */
+    color: #777; /* Set text color for copyright */
+    margin-top: 20px; /* Add margin at the top of the copyright text */
+}
+
+/* Styles for the footer container */
+.footer-container {
+    display: flex; /* Use flexbox for container layout */
+    justify-content: space-between; /* Space elements evenly in the container */
+    align-items: center; /* Center-align items vertically */
+}
+
+/* Responsive adjustments for the footer container */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        text-align: center; /* Center-align text on smaller screens */
+    }
+}
+
+.btn.write-review {
+    float: right; /* Float the button to the right */
+    margin-top: -6px; /* Adjust the top margin to -6px */
+    padding: 10px 20px; /* Add padding to the button */
+    background-color: #1ba39c; /* Set background color */
+    color: #fff; /* Set text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add border radius for rounded corners */
+    font-size: 16px; /* Set font size */
+    font-weight: bold; /* Set font weight to bold */
+    text-transform: uppercase; /* Transform text to uppercase */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Add transition for background color */
+}
+
+/* Hover effect for the button */
+.btn.write-review:hover {
+    background-color: #0e7c74; /* Darken background color on hover */
+}
+
+/* Scroll-down button */
+.scroll-down {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    width: 50px;
+    margin-left: -25px;
+    height: 40px;
+    padding-top: 10px;
+    z-index: 100;
+    text-align: center; /* Center-align text */
+    transition: opacity 0.3s ease; /* Add transition for opacity */
+}
+
+.scroll-down:hover {
+    opacity: 0.8; /* Reduce opacity on hover */
+}
+
+.scroll-down img {
+    width: 100%;
+    opacity: 0.9; /* Set initial opacity */
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2500ms;
+    animation-duration: 2500ms;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: fadeInDownimg;
+    animation-name: fadeInDownimg;
+    visibility: visible;
+}
+
+.scroll-down span {
+    font-size: 18px; /* Adjust font size for better readability */
+    color: #fff; /* Set text color */
+    opacity: 0.9; /* Set initial opacity */
+}
+
+/* Animation for scroll-down image */
+@-webkit-keyframes fadeInDownimg {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDownimg {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+/* Additional styles for h5 elements */
+.jobicon+h5 {
+    margin-bottom: 20px;
+    font-size: 20px; /* Increase font size */
+    color: #333; /* Set text color */
+    opacity: 0.9; /* Set initial opacity */
+}
+
+.jobicon+h5:hover {
+    opacity: 1; /* Increase opacity on hover */
+}
+
+/* Styling for menu content */
+.menu-content {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+}
+
+/* Styling for sub-menu items */
+.sub-menu {
+    background: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    width: 270px;
+    height: 450px;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px; /* Add border radius for rounded corners */
+    transition: box-shadow 0.3s ease; /* Add transition for box-shadow */
+}
+
+.sub-menu:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Adjust box-shadow on hover for a subtle lift effect */
+}
+
+/* Styling for status variables */
+.status_var {
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; /* Make it a circle */
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.status_var img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio of the image */
+}
+
+/* Styling for card images */
+.card-img-top {
+    max-height: 150px;
+    max-width: 230px;
+    min-height: 150px;
+    min-width: 230px;
+    object-fit: cover; /* Maintain aspect ratio of the image */
+    border-radius: 8px; /* Add border radius for rounded corners */
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+
+/* Additional styles for sub-menu items on small screens */
+@media (max-width: 756px) {
+    .sub-menu {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px; /* Add border radius for rounded corners */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        padding: 2rem; /* Increase padding for better spacing */
+        overflow: auto; /* Enable overflow scrolling for content */
+    }
+}
+
+/* Keyframe animation for fading in and out images */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0; /* Start with opacity 0 */
+        transform: translateY(-20px); /* Move image up slightly */
+    }
+    50% {
+        opacity: 1; /* Reach full opacity */
+        transform: translateY(0); /* Return to original position */
+    }
+    100% {
+        opacity: 0; /* Fade out */
+    }
+}
+
+/* Styling for card images */
+.card-img-top {
+    max-height: 150px;
+    max-width: 230px;
+    min-height: 150px;
+    min-width: 230px;
+    object-fit: cover; /* Maintain aspect ratio of the image */
+    border-radius: 12px; /* Add border radius for rounded corners */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+/* Hover effect for card images */
+.card-img-top:hover {
+    transform: scale(1.05); /* Scale up the image on hover for a subtle zoom effect */
+}
+/* .custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 30px; /* Adjust as needed */
+  } */
