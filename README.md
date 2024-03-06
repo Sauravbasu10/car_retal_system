@@ -8,16 +8,18 @@ This is a Web based Application developed using PHP as a Host Language. Database
 <img src="/Screenshots/index.jpg" width="800" height="450" alt="landing_page"/>
 
 > - Available Cars
-<img src="/Screenshots/available_cars.png" width="800" height="450" alt="available_cars"/>
+<img src="/Screenshots/cars.jpg" width="800" height="450" alt="available_cars"/>
 
 > - Add Cars
-<img src="/Screenshots/add_car.png" width="800" height="700" alt="add_car"/>
+<img src="/Screenshots/login.jpg" width="800" height="700" alt="login"/>
 
 > - Booking Confirmation
-<img src="/Screenshots/booking_confirmation.png" width="800" height="800" alt="booking_confirm"/>
+<img src="/Screenshots/booknow.jpg" width="800" height="800" alt="book"/>
 
 > - Return Car
-<img src="/Screenshots/return_car.png" width="800" height="450" alt="return_car"/>
+<img src="/Screenshots/rent.jpg" width="800" height="450" alt="rent"/>
 
 > - Booking Summary
-<img src="/Screenshots/bookings.png" width="800" height="450" alt="booking_summary"/>
+<img src="/Screenshots/payment.jpg" width="800" height="450" alt="payment"/>
+
+<img src="/Screenshots/verify car.jpg" width="800" height="450" alt="verify"/>
